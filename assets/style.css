@@ -1,0 +1,125 @@
+#box { 
+  width: 200px; 
+  height: 120px;
+  position: absolute; 
+  top: 200px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  font-size: calc(1.5rem + 1px);
+  padding-top: 20px;
+}
+
+.mobile {
+  color: white;
+  background-color: #3e67b5ad;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-style: inset;
+  border-color: #119affad;
+}
+
+#box img {
+  margin-left: 30px;
+  height: 90px;
+  width: 250px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.mainContainer {
+  background-image: url('https://i.pinimg.com/originals/1a/10/dc/1a10dc534f02cc7eba1911cd78a513c3.gif');
+  background-size: 100vw 100vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.backgroundOpacity {
+
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#buttons {
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  gap: 5px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+button {
+  width: 70px;
+  z-index: 1;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-style: inset;
+  border-color: #119affad;
+  background-color: #3e67b5ad;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:active {
+  border-style: outset;
+  background-color: rgba(30, 48, 107, 0.678);
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .mainContainer {
+    background-image: url('https://c.tenor.com/Fj_XzHFFcNYAAAAd/aquario-aquarium.gif');
+  }
+
+  img {
+    margin-left: 20vw;
+    min-height: 100px;
+    min-width: 200px;
+  }
+
+  #buttons {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    border: 2px solid transparent;
+    border-style: inset;
+    border-color: #8f57e9;
+    background-color: #8f57e9ad;
+    box-shadow: 0 0 10px rgb(49 11 87);
+    padding: 15px;
+  }
+}
